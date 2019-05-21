@@ -1,0 +1,354 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>函数 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="generics.html" />
+    
+    
+    <link rel="prev" href="classes.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="basic-types.html">
+            
+                <a href="basic-types.html">
+            
+                    
+                    基础类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="interfaces.html">
+            
+                <a href="interfaces.html">
+            
+                    
+                    接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="classes.html">
+            
+                <a href="classes.html">
+            
+                    
+                    类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="functions.html">
+            
+                <a href="functions.html">
+            
+                    
+                    函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="generics.html">
+            
+                <a href="generics.html">
+            
+                    
+                    泛型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="enums.html">
+            
+                <a href="enums.html">
+            
+                    
+                    枚举
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >函数</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x51FD;&#x6570;">&#x51FD;&#x6570;</h1>
+<ul>
+<li>&#x82F1;&#x6587;&#x6587;&#x6863;&#xFF1A;<a href="http://www.typescriptlang.org/docs/handbook/functions.html" target="_blank">http://www.typescriptlang.org/docs/handbook/functions.html</a></li>
+<li>&#x4E2D;&#x6587;&#x6587;&#x6863;&#xFF1A;<a href="https://www.tslang.cn/docs/handbook/functions.html" target="_blank">https://www.tslang.cn/docs/handbook/functions.html</a></li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> myAdd = (x, y) =&gt; {
+  <span class="hljs-keyword">return</span> x + y
+}
+</code></pre>
+<p>&#x5199;&#x6210;<code>&#x5B8C;&#x6574;&#x51FD;&#x6570;&#x7C7B;&#x578B;</code>&#x5C31;&#x79F0;&#x4E0B;&#x9762;&#x7684;&#x6837;&#x5B50;, &#x5F53;&#x7136;&#x4F60;&#x4ECD;&#x65E7;&#x53EF;&#x4EE5;&#x7701;&#x7565;&#x5176;&#x4E2D;&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF0C;ts &#x4F1A;&#x81EA;&#x5DF1;&#x63A8;&#x65AD;&#x7C7B;&#x578B;&#xFF1A;</p>
+<pre><code class="lang-ts"><span class="hljs-keyword">let</span> myAdd: (baseValue: <span class="hljs-built_in">number</span>, increment: <span class="hljs-built_in">number</span>) =&gt; <span class="hljs-built_in">number</span> = (x: <span class="hljs-built_in">number</span>, y: <span class="hljs-built_in">number</span>): <span class="hljs-built_in">number</span> =&gt; {
+  <span class="hljs-keyword">return</span> x + y
+}
+</code></pre>
+<h2 id="&#x53EF;&#x9009;&#x53C2;&#x6570;">&#x53EF;&#x9009;&#x53C2;&#x6570;</h2>
+<pre><code class="lang-ts"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">buildName</span>(<span class="hljs-params">firstName: <span class="hljs-built_in">string</span>, lastName?: <span class="hljs-built_in">string</span></span>) </span>{
+  <span class="hljs-comment">// ...</span>
+}
+</code></pre>
+<h2 id="&#x9ED8;&#x8BA4;&#x53C2;&#x6570;">&#x9ED8;&#x8BA4;&#x53C2;&#x6570;</h2>
+<pre><code class="lang-ts">function buildName(firstName = &quot;alfredo&quot;, lastName: string) {
+  // ...
+}
+</code></pre>
+<h2 id="&#x5269;&#x4F59;&#x53C2;&#x6570;">&#x5269;&#x4F59;&#x53C2;&#x6570;</h2>
+<pre><code class="lang-ts"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">buildName</span>(<span class="hljs-params">firstName: <span class="hljs-built_in">string</span>, ...restOfName: <span class="hljs-built_in">string</span>[]</span>) </span>{
+  <span class="hljs-keyword">return</span> firstName + <span class="hljs-string">&quot; &quot;</span> + restOfName.join(<span class="hljs-string">&quot; &quot;</span>)
+}
+</code></pre>
+<h2 id="&#x91CD;&#x8F7D;">&#x91CD;&#x8F7D;</h2>
+<p>&#x56E0;&#x4E3A;&#x524D;&#x4E24;&#x53E5;&#x8BDD;&#x7684;&#x91CD;&#x8F7D;&#xFF0C;<code>pickCard</code>&#x5728;&#x8C03;&#x7528;&#x7684;&#x65F6;&#x5019;&#x5C31;&#x4F1A;&#x8FDB;&#x884C;&#x7C7B;&#x578B;&#x68C0;&#x67E5;&#x3002;</p>
+<pre><code class="lang-ts"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">pickCard</span>(<span class="hljs-params">x: { suit: <span class="hljs-built_in">string</span>; card: <span class="hljs-built_in">number</span> }[]</span>): <span class="hljs-title">number</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">pickCard</span>(<span class="hljs-params">x: <span class="hljs-built_in">number</span></span>): </span>{ <span class="hljs-title">suit</span>: <span class="hljs-title">string</span></span>; card: <span class="hljs-built_in">number</span> }
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">pickCard</span>(<span class="hljs-params">x</span>): <span class="hljs-title">any</span> </span>{
+  <span class="hljs-comment">// Check to see if we&apos;re working with an object/array</span>
+  <span class="hljs-comment">// if so, they gave us the deck and we&apos;ll pick the card</span>
+  <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> x == <span class="hljs-string">&quot;object&quot;</span>) {
+    <span class="hljs-keyword">let</span> pickedCard = <span class="hljs-built_in">Math</span>.floor(<span class="hljs-built_in">Math</span>.random() * x.length)
+    <span class="hljs-keyword">return</span> pickedCard
+  }
+  <span class="hljs-comment">// Otherwise just let them pick the card</span>
+  <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> x == <span class="hljs-string">&quot;number&quot;</span>) {
+    <span class="hljs-keyword">let</span> pickedSuit = <span class="hljs-built_in">Math</span>.floor(x / <span class="hljs-number">13</span>)
+    <span class="hljs-keyword">return</span> { suit: suits[pickedSuit], card: x % <span class="hljs-number">13</span> }
+  }
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="classes.html" class="navigation navigation-prev " aria-label="Previous page: 类">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="generics.html" class="navigation navigation-next " aria-label="Next page: 泛型">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"函数","level":"1.5","depth":1,"next":{"title":"泛型","level":"1.6","depth":1,"path":"posts/generics.md","ref":"posts/generics.md","articles":[]},"previous":{"title":"类","level":"1.4","depth":1,"path":"posts/classes.md","ref":"posts/classes.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"posts/functions.md","mtime":"2019-05-21T09:38:54.551Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-21T09:54:18.291Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
