@@ -1,0 +1,19 @@
+{
+  "name": "ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jarrett",
+  "license": "ISC",
+  "dependencies": {
+    "tslint": "^5.16.0"
+  },
+  "devDependencies": {
+    "prettier": "1.17.1",
+    "standard": "^12.0.1",
+    "typescript": "^3.3.3"
+  }
+}
